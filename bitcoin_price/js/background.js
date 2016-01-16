@@ -45,6 +45,7 @@ httpRequest(url, function(r){
     price = price.y;
 });
 
+
 chrome.omnibox.setDefaultSuggestion({'description':'Find current Bitcoin price.'});
 
 chrome.omnibox.onInputChanged.addListener(updateAmount);
